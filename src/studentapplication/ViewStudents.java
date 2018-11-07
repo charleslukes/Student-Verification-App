@@ -121,7 +121,7 @@ public class ViewStudents extends javax.swing.JFrame {
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(342, 342, 342)
                         .addComponent(jButton1)
-                        .addGap(44, 44, 44)
+                        .addGap(28, 28, 28)
                         .addComponent(jButton2))
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(38, 38, 38)

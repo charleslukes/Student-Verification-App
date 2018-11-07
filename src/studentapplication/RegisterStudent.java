@@ -251,11 +251,16 @@ public class RegisterStudent extends javax.swing.JFrame {
             String studentLevel = (String)levelField.getSelectedItem();
             String studentMatNo = matField.getText();
             String studentExamCenter = examCenterField.getText();
+            
+            if(!firstName.equals("") && !lastName.equals("") && !studentMatNo.equals("")&& !studentExamCenter.equals("")){
          
             String sql ="INSERT INTO STUDENTS(stdFirstName, stdLastName, stdDepartment, stdLevel, stdMatricNO, stdExamCenter) "
                     + "VALUES('"+firstName+"','"+lastName+"','"+studentDep+"', '"+studentLevel+"','"+studentMatNo+"','"+studentExamCenter+"')";      
             stmt.executeUpdate(sql);
-            JOptionPane.showMessageDialog(null, "Data saved succesfully");
+            JOptionPane.showMessageDialog(null, "Data saved succesfully");}
+            else{
+             JOptionPane.showMessageDialog(null, "Some fields are empty");
+            }
             
         }
         catch(SQLException e){
